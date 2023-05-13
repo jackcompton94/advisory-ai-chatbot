@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<!-- Introduction -->
+<category>
+  <pattern>HELLO ^</pattern>
+  <template>Hi! I am your Computer Science career guidance bot.<br/><br/>
+            Just say 'Start' when you would like to review some potential jobs.</template>
+</category>
+
+<category>
+  <pattern>HI ^</pattern>
+  <template>Hi! I am your Computer Science career guidance bot.<br/><br/>
+            Just say 'Start' when you would like to review some potential jobs.</template>
+</category>
+
+<category>
+  <pattern>HEY ^</pattern>
+  <template>Hi! I am your Computer Science career guidance bot.<br/><br/>
+            Just say 'Start' when you would like to review some potential jobs.</template>
+</category>
+
+<!-- Get to know the bot -->
+<category>
+    <pattern>WHAT IS COMPUTER SCIENCE</pattern>
+    <template>Computer Science is the study of computers and computational systems.</template>
+</category>
+
+<category>
+    <pattern>WHAT IS YOUR NAME</pattern>
+    <template>I don't have a name, but you can refer to me as your Career Guidance Bot!</template>
+</category>
+
+<category>
+    <pattern>TELL ME WHAT * IS</pattern>
+    <template><srai>WHAT IS <star/></srai></template>
+</category>
+
+
+<!-- Begin Job Recommendations --> 
+<category>
+    <pattern>START</pattern>
+    <template><random>
+        <li>Are you interested in designing and implementing efficient algorithms for solving complex computational problems?</li>
+        <li>Are you interested in exploring statistical analysis and deriving meaningful insights from large datasets?</li>
+        <li>Are you interested in configuring and managing network devices such as routers and switches?</li>
+        <li>Are you interested in identifying and mitigating potential security vulnerabilities in computer systems?</li>
+        <li>Are you interested in developing machine learning models and neural networks to enable intelligent decision making processes?</li>
+    </random></template>
+</category>
+
+<!-- Yes Responses-->
+<category>
+    <pattern>YES</pattern>
+    <that>ARE YOU INTERESTED IN DESIGNING AND IMPLEMENTING EFFICIENT ALGORITHMS FOR SOLVING COMPLEX COMPUTATIONAL PROBLEMS</that>
+    <template>Great! You might be interested in exploring the role of a Software Developer.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <that>ARE YOU INTERESTED IN EXPLORING STATISTICAL ANALYSIS AND DERIVING MEANINGFUL INSIGHTS FROM LARGE DATASETS</that>
+    <template>Perfect! Consider looking into the field of Data Science.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <that>ARE YOU INTERESTED IN CONFIGURING AND MANAGING NETWORK DEVICES SUCH AS ROUTERS AND SWITCHES</that>
+    <template>Excellent! Network Administration might be a suitable career path for you.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <that>ARE YOU INTERESTED IN IDENTIFYING AND MITIGATING POTENTIAL SECURITY VULNERABILITIES IN COMPUTER SYSTEMS</that>
+    <template>Awesome! You could explore the field of Cybersecurity Analyst.</template>
+</category>
+
+<category>
+    <pattern>YES</pattern>
+    <that>ARE YOU INTERESTED IN DEVELOPING MACHINE LEARNING MODELS AND NEURAL NETWORKS TO ENABLE INTELLIGENT DECISION MAKING PROCESSES</that>
+    <template>Great! Consider becoming an Artificial Intelligence Engineer.</template>
+</category>
+
+<!-- No Responses -->
+<category>
+    <pattern>NO</pattern>
+    <that>ARE YOU INTERESTED IN DESIGNING AND IMPLEMENTING EFFICIENT ALGORITHMS FOR SOLVING COMPLEX COMPUTATIONAL PROBLEMS</that>
+    <template>Not a problem! Lets see what else might suit your interests.<br/><br/>
+    Just say 'Start' to get another recommendation.</template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+    <that>ARE YOU INTERESTED IN EXPLORING STATISTICAL ANALYSIS AND DERIVING MEANINGFUL INSIGHTS FROM LARGE DATASETS</that>
+    <template>Not a problem! Lets see what else might suit your interests.<br/><br/>
+    Just say 'Start' to get another recommendation.</template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+    <that>ARE YOU INTERESTED IN CONFIGURING AND MANAGING NETWORK DEVICES SUCH AS ROUTERS AND SWITCHES</that>
+    <template>Not a problem! Lets see what else might suit your interests.<br/><br/>
+    Just say 'Start' to get another recommendation.</template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+    <that>ARE YOU INTERESTED IN IDENTIFYING AND MITIGATING POTENTIAL SECURITY VULNERABILITIES IN COMPUTER SYSTEMS</that>
+    <template>Not a problem! Lets see what else might suit your interests.<br/><br/>
+    Just say 'Start' to get another recommendation.</template>
+</category>
+
+<category>
+    <pattern>NO</pattern>
+    <that>ARE YOU INTERESTED IN DEVELOPING MACHINE LEARNING MODELS AND NEURAL NETWORKS TO ENABLE INTELLIGENT DECISION MAKING PROCESSES</that>
+    <template>Not a problem! Lets see what else might suit your interests.<br/><br/>
+    Just say 'Start' to get another recommendation.</template>
+</category>
+
+
+<!-- Default Response -->
+<category>
+  <pattern>*</pattern>
+  <template>I'm sorry, I couldn't understand your input.</template>
+</category>
+
+</aiml>
