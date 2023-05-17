@@ -1,3 +1,6 @@
 # advisory-ai-chatbot
 
-A basic AI Bot that interacts with a user to determine what interests they have in Computer Science and recommends a career pathing.
+An interactive AI chatbot using AIML (Artificial Intelligence Markup Language) and natural language processing techniques that suggests a career pathing for Computer Science students based on the user interaction.
+
+
+
